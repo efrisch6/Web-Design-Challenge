@@ -1,0 +1,58 @@
+.nav-pad {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.lat-button {
+    color:white;
+    text-decoration: none;
+    background-color: lightseagreen;
+    margin-left: 5%;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    font-family: Times;
+    font-size: 20px;
+}
+
+.lat-button:hover {
+    text-decoration: none;
+    color:white;
+}
+
+.main-menu:hover .sub-menu{
+    display: block;
+}
+
+.menu-loc {
+    position: relative;
+    right: -85%;
+}
+
+.meun-loc li {
+    padding: 10px;
+}
+
+.body-bg {
+    background-color: lightgrey;
+}
+
+.box-container {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.box-design  {
+    margin-top: 50px;
+    background-color: white;
+    color:black;
+    padding: 10px;
+}
+
+.box-design h1 {
+    color: lightseagreen;
+    font-size: 30px;
+    font-family: Times;
+}
+
