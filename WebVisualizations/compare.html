@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization Dashboard</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="body-bg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-pad">
+      <a class="lat-button" href="index.html"><strong>Latitude</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav menu-loc">
+            <li class="nav-item dropdown main-menu">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="max_temp.html">Max Temperature</a></li>
+                  <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                  <li><a class="dropdown-item" href="cloud.html">Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="compare.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+                </li>  
+                </ul>
+              </div>
+            </nav>
+        <div class="container-fluid box-container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <section class="box-design">
+                        <h1><strong>Vizualizations</strong></h1>
+                        <hr>
+                        <div class="container image-grid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="max_temp.html"><img src="assets/max_temp.png" alt="Max Temperature"></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="humidity.html"><img src="assets/huminity.png" alt="Humidity"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="cloud.html"><img src="assets/cloudiness.png" alt="Cloudiness"></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="wind.html"><img src="assets/wind_speed.png" alt="Wind Speed"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    <footer class="footer nav-bar-fixed-bottom trimmed-foot">
+        <div class="container foot-text">
+            <span class="text-muted text-center text-white-50 foot-text">&copy; Copyright Data Analytics Bootcamp 2019</span>
+        </div>
+    
+    </footer>
+
+</body>
+</html>

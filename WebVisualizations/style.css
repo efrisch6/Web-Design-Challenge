@@ -21,7 +21,15 @@
     color:white;
 }
 
+.navbar-toggler-icon li {
+    list-style-type: none;
+}
+
 .main-menu:hover .sub-menu{
+    display: block;
+}
+
+.dropdown-toggle-icon:hover .sub-menu{
     display: block;
 }
 
@@ -36,6 +44,7 @@
 
 .body-bg {
     background-color: lightgrey;
+    height: 100%;
 }
 
 .box-container {
@@ -47,12 +56,45 @@
     margin-top: 50px;
     background-color: white;
     color:black;
-    padding: 10px;
+    padding: 50px;
 }
 
 .box-design h1 {
     color: lightseagreen;
-    font-size: 30px;
+    font-size: 300%;
     font-family: Times;
 }
 
+.trimmed-foot {
+    background-color: grey;
+    border-top: 6px solid lightseagreen;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.foot-text {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.table-custom-border tbody td {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+.table-custom-border tbody th {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+.table-custom-border thead th {
+    border: none;
+    border-bottom: 2px solid lightgrey;
+}
+
+.image-grid img {
+    height: 100%;
+    width: 100%;
+}
