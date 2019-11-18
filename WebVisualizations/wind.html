@@ -8,70 +8,89 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="body-bg">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-pad">
-      <a class="lat-button" href="index.html"><strong>Latitude</strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav menu-loc">
-            <li class="nav-item dropdown main-menu">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Plots
-                </a>
-                <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="max_temp.html">Max Temperature</a></li>
-                  <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
-                  <li><a class="dropdown-item" href="cloud.html">Cloudiness</a></li>
-                  <li><a class="dropdown-item" href="wind.html">Wind Speed</a></li>
-                </ul>
-              </li>
-                <li class="nav-item">
+    <nav class="navbar navbar-expand-sm navbar-light nav-pad">
+        <a class="lat-button" href="index.html">Latitude</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="navbar-collapse collapse" id="navbarsExample03" style="">
+            <ul class="navbar-nav ml-auto navbar-color">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots<span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu no-border" aria-labelledby="dropdown03">
+                <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="compare.html">Comparison</a>
-                </li>
-                <li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="data.html">Data</a>
-                </li>  
-                </ul>
-              </div>
-            </nav>
-        <div class="container-fluid box-container">
-            <div class="row ">
-                <div class="col-md-8">
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid box-container">
+        <div class="row ">
+            <div class="col-lg-8 col-md-6 col-sm-12">
+            <section class="box-design img-display">
+                <h1><strong>Wind Speed</strong></h1>
+                <hr>
+                <img src="assets/wind_speed.png" alt="Wind Speed"></br>
+                <p>There are no observed trends with wind speed compared to latitude.  There tends to be varying readings for wind speed over all latitudes.  No correlations can be suggested 
+                    based on this data.
+                </p>
+            </section>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <section class="box-design">
-                    <h1><strong>Wind Speed</strong></h1>
+                    <h1><strong>Vizualizations</strong></h1>
                     <hr>
-                    <img src="assets/wind_speed.png" alt="Wind Speed"></br>
-                    <p>Image and some text</p>
-                    <p>Ut consectetur iaculis lectus sit amet ullamcorper. Aliquam rhoncus lacus id tincidunt pellentesque. Aliquam augue odio, tempor ullamcorper lacus sit amet, tincidunt auctor dui. Cras porta elit magna, ut sollicitudin ex euismod quis. Nam egestas tellus ut nunc suscipit feugiat. Suspendisse pulvinar urna condimentum enim porta luctus. Phasellus a viverra lacus, at ornare orci. Nulla euismod risus sit amet nisl semper maximus. Praesent ultricies, lacus eu luctus maximus, nunc odio euismod augue, non pellentesque tortor magna et metus. Aenean vehicula fringilla turpis, sollicitudin euismod arcu auctor vitae. Pellentesque luctus faucibus lorem at bibendum. Nulla facilisi. In venenatis eget magna nec vestibulum. Integer sit amet ante ut turpis laoreet sollicitudin et in justo. Etiam tincidunt sollicitudin massa sit amet volutpat.</p>
-                </section>
-                </div>
-                <div class="col-md-3">
-                    <section class="box-design">
-                        <h1><strong>Vizualizations</strong></h1>
-                        <hr>
-                        <div class="container image-grid">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <a href="max_temp.html"><img src="assets/max_temp.png" alt="Max Temperature"></a>
-                                </div>
-                                <div class="col-md-6">
-                                    <a href="humidity.html"><img src="assets/huminity.png" alt="Humidity"></a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <a href="cloud.html"><img src="assets/cloudiness.png" alt="Cloudiness"></a>
-                                </div>
-                                <div class="col-md-6">
-                                    <a href="wind.html"><img src="assets/wind_speed.png" alt="Wind Speed"></a>
-                                </div>
-                            </div>
+                    <div class="container image-grid-lg">
+                        <div class="row">
+                        <div class="col-md-6">
+                            <a href="max_temp.html"><img src="assets/max_temp.png" alt="Max Temperature"></a>
                         </div>
-                    </section>
-                </div>
+                        <div class="col-md-6">
+                            <a href="humidity.html"><img src="assets/huminity.png" alt="Humidity"></a>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-6">
+                            <a href="cloud.html"><img src="assets/cloudiness.png" alt="Cloudiness"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="wind.html"><img src="assets/wind_speed.png" alt="Wind Speed"></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="container image-grid-sm">
+                        <div class="row">
+                        <div class="col-sm-3">
+                            <a href="max_temp.html"><img src="assets/max_temp.png" alt="Max Temperature"></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="humidity.html"><img src="assets/huminity.png" alt="Humidity"></a>
+                        </div>  
+                        <div class="col-sm-3">
+                            <a href="cloud.html"><img src="assets/cloudiness.png" alt="Cloudiness"></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="wind.html"><img src="assets/wind_speed.png" alt="Wind Speed"></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
             </div>
         </div>
+    </div>
 
     <footer class="footer nav-bar-fixed-bottom trimmed-foot">
         <div class="container foot-text">
@@ -79,6 +98,11 @@
         </div>
     
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
