@@ -9,6 +9,11 @@
     .nav-pad {
         background-color: lightseagreen;
     }
+
+    .no-border {
+        border: none;
+        background-color: lightseagreen;
+    }
 }
 
 @media (min-width: 544px) {  
@@ -68,7 +73,6 @@
 
 .no-border {
     border: none;
-    background-color: lightseagreen;
 }
 
 .dropdown-toggle-icon:hover .sub-menu{
@@ -194,4 +198,7 @@
     border-bottom: 2px solid lightgrey;
 }
 
+.selection-border {
+    border: 2px solid lightseagreen;
 
+    
